@@ -1,7 +1,11 @@
 <template>
+    <main>
       <Slider></Slider>
+    </main>
+    <footer>
       <BtnInvertColors></BtnInvertColors>
       <BtnInfo></BtnInfo>
+    </footer>
   </div>
 </template>
 
