@@ -1,4 +1,5 @@
 <template>
+  <div id="app" v-bind:class="isInvertedColors ? 'is-inverted' : ''">
     <main>
       <Slider></Slider>
     </main>
@@ -15,7 +16,9 @@ import BtnInvertColors from "@/components/BtnInvertColors";
 import BtnInfo from "@/components/BtnInfo";
 
 export default {
-  name: 'app',
+  data() {
+    return { isInvertedColors: false };
+  },
   components: {
     Slider,
     BtnInvertColors,
