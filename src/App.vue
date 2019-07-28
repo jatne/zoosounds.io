@@ -24,7 +24,7 @@ export default {
     BtnInvertColors,
     BtnInfo
   }
-}
+};
 </script>
 
 <style lang="scss">
