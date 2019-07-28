@@ -1,18 +1,21 @@
 <template>
       <Slider></Slider>
       <BtnInvertColors></BtnInvertColors>
+      <BtnInfo></BtnInfo>
   </div>
 </template>
 
 <script>
 import Slider from "@/components/Slider";
 import BtnInvertColors from "@/components/BtnInvertColors";
+import BtnInfo from "@/components/BtnInfo";
 
 export default {
   name: 'app',
   components: {
     Slider,
     BtnInvertColors,
+    BtnInfo
   }
 }
 </script>
