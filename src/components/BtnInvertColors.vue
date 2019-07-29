@@ -7,7 +7,7 @@ export default {
   name: "BtnInvertColors",
   methods: {
     invertColors() {
-      this.$parent.isInvertedColors = !this.$parent.isInvertedColors;
+      this.$parent.$parent.isInvertedColors = !this.$parent.$parent.isInvertedColors;
     }
   }
 };
