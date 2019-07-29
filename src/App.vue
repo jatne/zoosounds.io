@@ -50,14 +50,6 @@ body {
 #app {
   --theme: #000000;
   --theme-inverse: #ffffff;
-
-  display: grid;
-  grid-template-rows: 90vh 1fr;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  min-height: 30rem;
-  padding: 1rem;
   background: var(--theme-inverse);
   color: var(--theme);
   transition: all 0.3s ease;

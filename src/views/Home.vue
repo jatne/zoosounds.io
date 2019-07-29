@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <main>
       <Slider></Slider>
     </main>
@@ -7,7 +7,7 @@
       <BtnInvertColors></BtnInvertColors>
       <BtnInfo></BtnInfo>
     </footer>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -24,3 +24,15 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.home {
+  display: grid;
+  grid-template-rows: 90vh 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 30rem;
+  padding: 1rem;
+}
+</style>
