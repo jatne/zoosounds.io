@@ -18,7 +18,9 @@ import BtnInfo from "@/components/BtnInfo";
 export default {
   name: 'home',
   components: {
-    Slider,BtnInvertColors,BtnInfo
+    Slider,
+    BtnInvertColors,
+    BtnInfo
   }
 }
 </script>
