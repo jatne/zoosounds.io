@@ -1,7 +1,7 @@
 <template>
   <button type="button" v-on:click="toggleInfo">
-    <span v-if="isActive">made with</span> ❤️
-    <span v-if="isActive">for Hania</span>
+    <span v-show="isActive">made with</span> ❤️
+    <span v-show="isActive">for Hania</span>
   </button>
 </template>
 
