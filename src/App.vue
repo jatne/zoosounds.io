@@ -66,9 +66,9 @@ body {
   --theme: #000000;
   --theme-inverse: #ffffff;
 
-  display: grid;
-  grid-template-rows: 90vh 1fr;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100vh;
   min-height: 30rem;
@@ -84,7 +84,10 @@ body {
 }
 
 main {
+  display: flex;
   width: 100%;
+  flex-grow: 1;
+  align-items: center;
 }
 
 img {

@@ -90,6 +90,6 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  max-height: 100vh;
+  max-height: 80vh;
 }
 </style>
