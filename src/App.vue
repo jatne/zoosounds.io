@@ -1,7 +1,7 @@
 <template>
   <div id="app" v-bind:class="isInvertedColors ? 'is-inverted' : ''">
     <main>
-      <Slider></Slider>
+      <Slider :animals="animals"></Slider>
     </main>
     <footer>
       <BtnInvertColors></BtnInvertColors>
@@ -11,19 +11,73 @@
 </template>
 
 <script>
-import Slider from '@/components/Slider';
-import BtnInvertColors from '@/components/BtnInvertColors';
-import BtnInfo from '@/components/BtnInfo';
+import Slider from "@/components/Slider";
+import BtnInvertColors from "@/components/BtnInvertColors";
+import BtnInfo from "@/components/BtnInfo";
 
 export default {
   data() {
-    return { isInvertedColors: false };
+    return {
+      isInvertedColors: false,
+      animals: [
+        {
+          name: "Duck",
+          image: "duck.svg",
+          sound: "duck.mp3"
+        },
+        {
+          name: "Cow",
+          image: "cow.svg",
+          sound: "cow.mp3"
+        },
+        {
+          name: "Crow",
+          image: "crow.svg",
+          sound: "crow.mp3"
+        },
+        {
+          name: "Dog",
+          image: "dog.svg",
+          sound: "dog.mp3"
+        },
+        {
+          name: "Elephant",
+          image: "elephant.svg",
+          sound: "elephant.mp3"
+        },
+        {
+          name: "Horse",
+          image: "horse.svg",
+          sound: "horse.mp3"
+        },
+        {
+          name: "Owl",
+          image: "owl.svg",
+          sound: "owl.mp3"
+        },
+        {
+          name: "Pig",
+          image: "pig.svg",
+          sound: "pig.mp3"
+        },
+        {
+          name: "Rooster",
+          image: "rooster.svg",
+          sound: "rooster.mp3"
+        },
+        {
+          name: "Sheep",
+          image: "sheep.svg",
+          sound: "sheep.mp3"
+        }
+      ]
+    };
   },
   components: {
     Slider,
     BtnInvertColors,
-    BtnInfo,
-  },
+    BtnInfo
+  }
 };
 </script>
 
@@ -48,9 +102,9 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
