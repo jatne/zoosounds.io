@@ -1,21 +1,13 @@
-# zoosounds
+#  🙉 zoosounds
 
-## Project setup
-```
-npm install
-```
+[zoosounds.devx.pl](https://zoosounds.devx.pl  "ZooSounds")
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Just simple **Vue** project made with ❤ for my little daughter Hania.
+It's slider with contrasting pictures of animals, make a sound when clicked.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+✌
 
-### Lints and fixes files
-```
-npm run lint
-```
+## to:do
+
+ - play sound when slide is changed
+ - improve UX
