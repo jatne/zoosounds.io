@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Slider from "@/components/Slider";
-import BtnInvertColors from "@/components/BtnInvertColors";
-import BtnInfo from "@/components/BtnInfo";
+import Slider from '@/components/Slider';
+import BtnInvertColors from '@/components/BtnInvertColors';
+import BtnInfo from '@/components/BtnInfo';
 
 export default {
   data() {
@@ -22,8 +22,8 @@ export default {
   components: {
     Slider,
     BtnInvertColors,
-    BtnInfo
-  }
+    BtnInfo,
+  },
 };
 </script>
 
@@ -48,9 +48,9 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
