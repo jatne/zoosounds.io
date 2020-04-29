@@ -1,11 +1,16 @@
 <template>
-  <swiper :options="swiperOptions">
+  <swiper
+    ref="animalSlider"
+    v-swiper:animalSlider="swiperOptions"
+    @ready="handleSlideChange"
+    @slideChange="handleSlideChange"
+  >
     <swiper-slide v-for="(animal, index) in this.animals" v-bind:key="index">
-      <div v-on:click="playSound(animal.name)">
+      <div v-on:click="playSound(index)">
         <img :src="require(`@/assets/zoo/images/${animal.image}`)" v-bind:alt="animal.name" />
         <audio
           v-bind:src="require(`@/assets/zoo/sounds/${animal.sound}`)"
-          v-bind:data-animal="animal.name"
+          v-bind:data-animal="index"
         ></audio>
       </div>
     </swiper-slide>
@@ -25,21 +30,30 @@ export default {
     swiper: directive
   },
   props: ["animals"],
-  data() {
-    return {
-      swiperOptions: {
-        loop: true
-      }
-    };
+  computed: {
+    swiper() {
+      return this.$refs.animalSlider.$swiper;
+    }
   },
   methods: {
     playSound: function(animal) {
       const animalSound = document.querySelector(
-        `audio[data-animal=${animal}]`
+        `audio[data-animal="${animal}"]`
       );
       animalSound.currentTime = 0;
       animalSound.play();
+    },
+    handleSlideChange: function() {
+      this.playSound(this.swiper.realIndex ? this.swiper.realIndex : 0);
     }
+  },
+  data() {
+    return {
+      swiperOptions: {
+        loop: true,
+        grabCursor: true
+      }
+    };
   }
 };
 </script>
@@ -49,6 +63,5 @@ img {
   height: 90vh;
   display: block;
   width: 100%;
-  cursor: pointer;
 }
 </style>
