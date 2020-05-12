@@ -21,6 +21,11 @@ export default {
       isInvertedColors: false,
       animals: [
         {
+          name: "Cat",
+          image: "cat.svg",
+          sound: "cat.mp3"
+        },
+        {
           name: "Duck",
           image: "duck.svg",
           sound: "duck.mp3"
@@ -69,6 +74,11 @@ export default {
           name: "Sheep",
           image: "sheep.svg",
           sound: "sheep.mp3"
+        },
+        {
+          name: "Frog",
+          image: "frog.svg",
+          sound: "frog.mp3"
         }
       ]
     };
